@@ -1,0 +1,41 @@
+body {
+    font-family: "Verdana", sans-serif, monospace;
+    margin: 80px;
+    line-height: 28px;
+    color: rgb(50, 50, 50)
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 12px;
+}
+
+h2 {
+    color: rgb(135, 135, 135);
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 12px;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    display: block;
+}
+
+.gif1 {
+    margin-left: 325px;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
