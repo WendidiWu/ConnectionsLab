@@ -1,0 +1,71 @@
+body {
+    font-family: "Courier New", sans-serif, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 20px 20px;
+}
+
+.images {
+    display:flex;
+    align-items: center;
+    width: 1116px;
+    padding: 0px;
+}
+
+.sentence {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between; 
+    width: 100px; 
+    text-align: center;
+}
+
+#zzz_container{
+    position:absolute;
+    top:450px;
+    left: 500px;
+    display: none;
+}
+
+.zzz{
+    position:absolute;
+    font-size:40px;
+    animation: floatZ 2s infinite;
+}
+
+.zzz:nth-child(1) {
+    top: 0;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.zzz:nth-child(2) {
+    top: -30px;
+    left: 40px;
+    animation-delay: 0.5s;
+}
+
+.zzz:nth-child(3) {
+    top: -60px;
+    left: 80px;
+    animation-delay: 1s;
+}
+
+@keyframes floatZ {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
